@@ -22,4 +22,8 @@ class HomeController @Inject() extends Controller {
     Ok("Hello world")
   }
 
+  def hello(name: String) = Action {
+    Ok("hello " + name)
+  }
+
 }
