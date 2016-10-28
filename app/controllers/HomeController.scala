@@ -23,7 +23,8 @@ class HomeController @Inject() extends Controller {
   }
 
   def hello(name: String) = Action {
-    Ok("hello " + name)
+    // Ok("hello " + name)
+    Ok(views.html.hello(name))
   }
 
 }
